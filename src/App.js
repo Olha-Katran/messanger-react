@@ -1,15 +1,17 @@
 import './App.css';
-import ContextContainer from './components/ContainerComponents/contextContainer';
-import HistoryContainer from './components/ContainerComponents/historyContainer';
+import React from 'react';
+import Main from './components/mainComponent';
 
-function App() {
-    return (
-        <div>
-            <ContextContainer />
-            <HistoryContainer />
-        </div>
+class App extends React.Component {
 
-    )
+    render () {
+        return (
+            <div className="app">
+                <Main />
+            </div>
+        )
+    }
+
 }
 
 export default App;

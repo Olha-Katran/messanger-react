@@ -1,11 +1,11 @@
-function MessageRow () {
-    const messageInfo = {
+import React from 'react';
 
-    };
+function MessageRow (props) {
 
     return (
-        <div>
-            <p>some text</p>
+        <div className="message-row">
+            <h4>{props.id}</h4>
+            <p>{props.date}</p>
         </div>
     )
 };

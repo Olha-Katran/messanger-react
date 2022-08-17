@@ -1,16 +1,11 @@
 import React from 'react';
 
-const ContactRow = () => {
-    const contactInfo = {
-        name: "name",
-        avatar: "img",
-        date: "12:03:22",
-        messageText: "Some text"
-    };
+const ContactRow = (props) => {
 
     return (
-        <div>
-            {contactInfo}
+        <div className="contact-row">
+            <h3>{props.name}</h3>
+            <p>{props.id}</p>
         </div>
     )
 };

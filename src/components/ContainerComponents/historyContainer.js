@@ -3,11 +3,11 @@ import HeaderContact from "../HeaderContact/headerContact";
 import MessagingHistoryList from "../MessagingHistoryList/messagingHistoryList";
 import MainMessageInput from "../MainMessageInput/mainMessageInput";
 
-const HistoryContainer = () => {
+const HistoryContainer = (props) => {
     return (
-        <div>
+        <div className="container history-container">
             <HeaderContact />
-            <MessagingHistoryList />
+            <MessagingHistoryList messageHistory={props.messageHistory} />
             <MainMessageInput />
         </div>
     )

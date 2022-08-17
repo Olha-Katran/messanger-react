@@ -1,11 +1,18 @@
-function MessagingHistoryList () {
+import React from 'react';
+import MessageRow from '../MessageRow/messageRow';
+
+function MessagingHistoryList (props) {
 
 
     return (
-        <div>
-            <ul>
-                <li>name</li>
-            </ul>
+        <div className="messagingHistoryList">
+            {props.messageHistory.map(message => {
+                return <MessageRow
+                    key={message}
+                    id={message.id}
+                    date={message.date}
+                />
+            })}
         </div>
     )
 };
