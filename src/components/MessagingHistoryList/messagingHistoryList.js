@@ -3,13 +3,14 @@ import MessageRow from '../MessageRow/messageRow';
 
 function MessagingHistoryList (props) {
 
-
     return (
         <div className="messagingHistoryList">
-            {props.messageHistory.map(message => {
+            {
+                props.messageHistory.find(x => x.contactId === props.selectedContactId).messages.map(message => {
                 return <MessageRow
-                    key={message}
-                    id={message.id}
+                    key={message.messageId}
+                    avatar={props.avatar}
+                    text={message.text}
                     date={message.date}
                 />
             })}

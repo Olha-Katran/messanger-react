@@ -11,7 +11,10 @@ const ContactContainer = (props) => {
               <Header />
               <SearchBar />
           </div>
-          <ContactList contactList={props.contactList}/>
+          <ContactList
+              contactList={props.contactList}
+              onChange={props.onChange}
+          />
       </div>
   )
 };
