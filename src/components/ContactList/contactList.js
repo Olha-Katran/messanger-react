@@ -7,8 +7,12 @@ const ContactList = (props) => {
           {props.contactList.map(contact => {
               return <ContactRow
                   key={contact.id}
-                  name={contact.name}
                   id={contact.id}
+                  name={contact.name}
+                  avatar={contact.avatar}
+                  date={contact.date}
+                  message={contact.message}
+                  onChange={props.onChange}
               />
           })}
       </div>

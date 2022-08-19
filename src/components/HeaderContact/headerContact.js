@@ -1,9 +1,8 @@
-const HeaderContact = () => {
-    const name = [];
+const HeaderContact = (props) => {
 
     return (
-        <div>
-            {name}
+        <div className="header-contact">
+
         </div>
     )
 };
