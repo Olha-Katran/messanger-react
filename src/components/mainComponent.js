@@ -116,7 +116,6 @@ class Main extends React.Component {
         let filterObject = this.state.messageHistory.find( obj => obj.contactId === contactId)
         if(filterObject !== undefined) {
             let lastMessage = filterObject.messages.slice(-1)[0].text;
-            console.log(filterObject.messages.slice(-1)[0]);
             return lastMessage;
         } else {
             return 'No messages yet'
