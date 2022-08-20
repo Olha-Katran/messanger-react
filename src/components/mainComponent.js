@@ -95,20 +95,24 @@ class Main extends React.Component {
         this.setState({selectedContactId: id })
     }
 
-    addMessage (value) {
+    addMessage (value, isMessageFromUser, senderId) {
+        let contactId = isMessageFromUser ? this.state.selectedContactId : senderId;
         let newState = this.state.messageHistory.map(messageHis => {
-            if (messageHis.contactId === this.state.selectedContactId) {
+            if (messageHis.contactId === contactId) {
 
                 const newMessages = [...messageHis.messages]
-                newMessages.push({senderId: 0, messageId: Math.floor(Math.random() * 100), date: Date(), text: value});
-                console.log(newMessages);
+                newMessages.push({ senderId: senderId, messageId: Math.floor(Math.random() * 100), date: Date(), text: value});
                 return {...messageHis, messages: newMessages}
             } else {
                 return messageHis;
             }
         });
 
-        this.setState( {messageHistory: newState})
+        this.setState( {messageHistory: newState});
+        if(isMessageFromUser) {
+            const senderIdForApi = this.state.selectedContactId;
+            this.getApiAnswer(senderIdForApi);
+        }
     }
 
     getLastMessage (contactId) {
@@ -121,7 +125,17 @@ class Main extends React.Component {
             return 'No messages yet'
         }
 
+    }
 
+    getApiAnswer (senderIdForApi) {
+        fetch('https://api.chucknorris.io/jokes/random')
+            .then(response => response.json())
+                .then(responseObj => this.delay(10000, responseObj.value ))
+                .then(value => this.addMessage(value, false, senderIdForApi));
+    }
+
+    delay (ms, value) {
+        return new Promise(resolve => setTimeout(resolve, ms, value));
     }
 
     render () {
