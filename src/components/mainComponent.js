@@ -8,6 +8,10 @@ import HistoryContainer from "./ContainerComponents/historyContainer";
 
 class Main extends React.Component {
 
+    isFirstTimeKey = "IsFirstTime";
+    contactsKey = "contacts";
+    messagesKey = "messages";
+
     constructor(props) {
         super(props);
 
@@ -103,10 +107,6 @@ class Main extends React.Component {
                 })})
         }
     }
-
-    isFirstTimeKey = "IsFirstTime";
-    contactsKey = "contacts";
-    messagesKey = "messages";
 
     render () {
         return (
