@@ -36,7 +36,7 @@ class MainMessageInput extends React.Component  {
                     type="submit"
                     onClick={(e) => {
                         e.preventDefault()
-                        this.props.addMessage(this.state.message)
+                        this.props.addMessage(this.state.message, true, 0)
                         this.clearCurrentMessage()
                     }}
 
