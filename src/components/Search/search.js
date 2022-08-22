@@ -1,14 +1,20 @@
 import React from 'react';
 
-const SearchBar = () => {
-    return (
-        <form className="search-bar">
-            <input type="text" className="search"></input>
-            <button type="submit" className="search-button">
-            </button>
-        </form>
+const SearchBar = (props) => {
 
-    )
+        return (
+            <form className="search-bar">
+                <input
+                    type="text"
+                    placeholder="Search contact"
+                    className="search"
+                    onChange={(e) => {
+                        props.searchInputHandler(e.target.value)
+                    }
+                }
+                />
+            </form>
+        )
 }
 
 export default SearchBar;

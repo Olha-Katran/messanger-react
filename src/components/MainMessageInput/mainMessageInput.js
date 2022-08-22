@@ -22,26 +22,29 @@ class MainMessageInput extends React.Component  {
     render () {
 
         return (
-            <form
-                // submit={() => this.clearCurrentMessage}
-            >
-                <input
-                    maxLength="500"
-                    type="text"
-                    value={this.state.message}
-                    placeholder="Type your message"
-                    onChange={(e) => this.currentMessageChanged(e)}
-                />
-                <button
-                    type="submit"
-                    onClick={(e) => {
-                        e.preventDefault()
-                        this.props.addMessage(this.state.message, true, 0)
-                        this.clearCurrentMessage()
-                    }}
+            <form className="main-message-input">
+                <div className="input-button-block">
+                    <input
+                        className="message-input"
+                        maxLength="500"
+                        type="text"
+                        value={this.state.message}
+                        placeholder="Type your message"
+                        onChange={(e) => this.currentMessageChanged(e)}
+                    />
 
-                >Send
-                </button>
+                    <button
+
+                        type="submit"
+                        onClick={(e) => {
+                            e.preventDefault()
+                            this.props.addMessage(this.state.message, true, 0)
+                            this.clearCurrentMessage()
+                        }}
+                    ><i className="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+
             </form>
         )
     }

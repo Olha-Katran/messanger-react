@@ -4,6 +4,7 @@ import ContactRow from "../ContactRow/contactRow";
 const ContactList = (props) => {
   return (
       <div className="contact-list">
+          <h1 className="header-chat">Chats</h1>
           {props.contactList.map(contact => {
               return <ContactRow
                   key={contact.id}
@@ -11,7 +12,7 @@ const ContactList = (props) => {
                   name={contact.name}
                   avatar={contact.avatar}
                   date={contact.date}
-                  message={contact.message}
+                  getLastMessage={props.getLastMessage}
                   onChange={props.onChange}
               />
           })}

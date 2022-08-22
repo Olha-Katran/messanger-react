@@ -7,7 +7,7 @@ const HistoryContainer = (props) => {
 
     return (
         <div className="history-container">
-            <HeaderContact contactInfo={props.contactInfo}/>
+            <HeaderContact contactInfo={props.contactInfo.find(x => x.id === props.selectedContactId)}/>
             <MessagingHistoryList messageHistory={props.messageHistory}
                                   avatar={props.contactInfo.find(x => x.id === props.selectedContactId).avatar}
                                   selectedContactId={props.selectedContactId} />

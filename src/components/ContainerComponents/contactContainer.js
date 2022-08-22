@@ -2,18 +2,31 @@ import React from 'react';
 import Header from '../Header/header';
 import SearchBar from '../Search/search';
 import ContactList from '../ContactList/contactList';
-import ContactRow from '../ContactRow/contactRow';
+import {useState} from 'react';
 
 const ContactContainer = (props) => {
+
+    const [searchValue, setSearchValue] = useState("");
+
+    const searchInputHandler = (value) => {
+        setSearchValue(value)
+    }
+
   return (
-      <div className="container context-container" >
+      <div className="contact-container" >
+
           <div className="grey-block">
               <Header />
-              <SearchBar />
+              <SearchBar searchInputHandler={searchInputHandler}/>
+
           </div>
+
           <ContactList
-              contactList={props.contactList}
+              contactList={props.contactList
+                  .filter(obj => obj.name.includes(searchValue))
+                  .sort( (objA, objB) => Number(props.getLastMessage(objB.id).date) - Number(props.getLastMessage(objA.id).date))}
               onChange={props.onChange}
+              getLastMessage={props.getLastMessage}
           />
       </div>
   )
