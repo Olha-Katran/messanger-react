@@ -38,7 +38,10 @@ class MainMessageInput extends React.Component  {
                         type="submit"
                         onClick={(e) => {
                             e.preventDefault()
-                            this.props.addMessage(this.state.message, true, 0)
+                            if (this.state.message !== "") {
+                                this.props.addMessage(this.state.message, true, 0)
+                            }
+
                             this.clearCurrentMessage()
                         }}
                     ><i className="fa-solid fa-paper-plane"></i>
