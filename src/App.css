@@ -82,6 +82,7 @@ body {
   height: 60px;
   border-radius: 50%;
 }
+
 .avatar header{
   margin-top: 40px;
 }
@@ -130,6 +131,7 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
   line-height: 0;
+  margin-top: 5px;
 
 }
 
@@ -162,7 +164,7 @@ body {
 }
 
 .messaging-history-list {
-  margin-top: 60px;
+  margin-top: 100px;
   overflow-y: scroll;
   flex-grow: 2;
   scroll-behavior: revert;
@@ -178,7 +180,6 @@ body {
   justify-content: center;
   border-top: 1px solid lightslategrey;
 }
-
 
 .message-input {
   width: 700px;
@@ -197,26 +198,15 @@ button {
 
 .message-template-row {
   margin: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-message-template-flex {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 0;
-}
-.my-message-template-flex p {
-  display: flex;
-  background-color: grey;
-  margin-top: 25px;
-  padding: 5px;
-  height: 35px;
-  color: white;
-  border-radius: 20px;
-  min-width:30px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
-
+  margin-top: 0;
 }
 
 .contact-message-template-flex {
@@ -225,22 +215,49 @@ button {
   margin-bottom: 0;
   margin-top: 0;
 }
-.contact-message-template-flex p {
-  display: flex;
-  background-color: midnightblue;
-  margin-top: 25px;
-  padding: 5px;
-  height: 35px;
-  color: white;
-  border-radius: 20px;
-  min-width:30px;
-  justify-content: center;
-  align-items: center;
+
+.contact-message-date {
+  margin-left: 80px;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
 
+.my-message-date {
+  text-align: end;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
 
+.contact-message-template-flex p {
+  background-color: midnightblue;
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+  min-width:30px;
+  margin-bottom: 0;
+}
+
+.my-message-template-flex p {
+  background-color: lightgrey;
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+  min-width:30px;
+  margin-bottom: 0;
+}
 
 .date-message {
   display: flex;
   justify-content: flex-end;
+}
+
+.message-avatar {
+  margin-right: 16px;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  margin-top: 16px;
+  margin-left: 8px;
+  min-height: 45px;
+  border-radius: 50%;
 }

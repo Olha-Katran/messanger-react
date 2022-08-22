@@ -2,57 +2,57 @@
    "contactList": [
       {
          "name": "Alice Freeman",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/1/100/100",
          "id": 1
       },
       {
          "name": "Josefina",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/2/100/100",
          "id": 2
       },
       {
          "name": "Velazquez",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/3/100/100",
          "id": 3
       },
       {
          "name": "Barrera",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/4/100/100",
          "id": 4
       },
       {
          "name": "Mary",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/5/100/100",
          "id": 5
       },
       {
          "name": "Paul",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/7/100/100",
          "id": 6
       },
       {
          "name": "Henry Field",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/8/100/100",
          "id": 7
       },
       {
          "name": "Henry Field",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/9/100/100",
          "id": 8
       },
       {
          "name": "Henry Field",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/10/100/100",
          "id": 9
       },
       {
          "name": "Henry Field",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/11/100/100",
          "id": 10
       },
       {
          "name": "Henry Field",
-         "avatar": "https://picsum.photos/seed/picsum/200/300",
+         "avatar": "https://picsum.photos/id/12/100/100",
          "id": 11
       }
    ]
