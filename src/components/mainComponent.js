@@ -65,7 +65,7 @@ class Main extends React.Component {
     getLastMessage (contactId) {
         let filterObject = this.state.messageHistory.find( obj => obj.contactId === contactId)
         if(filterObject !== undefined) {
-            return filterObject.messages.slice(-1)[0];
+            return filterObject.messages.sort((message1, message2) => Number(message1.date) - Number(message2.date)).slice(-1)[0];
         }
     }
 
