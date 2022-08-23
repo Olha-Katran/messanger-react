@@ -70,12 +70,18 @@ body {
 
 .grey-block {
   background-color: #00553a;
-  height: 200px;
+  padding-bottom: 8px;
 }
+
 .header-container {
   display: flex;
+  height: 100px;
   margin-bottom: 0;
   padding-bottom: 0;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .contact-list {
@@ -88,8 +94,8 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  min-width: 55px;
-  min-height: 50px;
+  min-width: 60px;
+  min-height: 60px;
   border: 1px solid #fffef1;
 }
 
@@ -98,44 +104,45 @@ body {
 }
 
 .name-header {
-  margin-top: 30px;
   align-items: center;
   color: #fffef1;
 }
 
+.search-bar-wrapper {
+  display: flex;
+  background-color: #fffef1;
+  text-align: left;
+  padding: 0 16px;
+  color: #00553a;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+
 .search-bar {
-  position: relative;
   margin-top:0;
   padding-top: 0;
 }
 
-.search-bar i {
-  position: absolute;
-}
 .icon {
-  padding-left: 10px;
-  padding-top: 5px;
   color: #00553a;
-  min-width: 50px;
-  text-align: center;
-  margin-top: 0.8em;
-  z-index: 1;
 }
 
-.search {
+.search-input {
   background-color: #fffef1;
-  border: 1px solid #00553a;
+  padding: 0 16px;
   color: #00553a;
-  padding-left: 40px;
-  margin-bottom: 10px;
-  width: 90%;
   height: 30px;
   text-align: left;
-  border-radius: 20px;
-  margin-top: 0.5em;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.search-input :active {
+  border: none;
 }
 
 .contact-row {
@@ -220,41 +227,32 @@ body {
 
 .main-message-input {
   background-color: #00553a;
-  min-height: 100px;
-  max-height: 100px;
+  padding: 16px 32px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .input-button-block {
-  position: relative;
   display: flex;
-  width: 850px;
+  width: 100%;
   height: 40px;
   text-align: left;
   border-radius: 20px;
-  padding-left: 20px;
+  padding: 0 16px;
   border: 1px solid #00553a;
   color: #00553a;
   background-color: #fffef1;
 }
 
 .message-input {
-  width: 700px;
+  width: 100%;
   border: none;
   outline: none;
-
-  /*width: 800px;*/
-  /*height: 40px;*/
-  /*text-align: left;*/
-  /*border-radius: 20px;*/
-  /*padding-left: 20px;*/
-  /*border: 1px solid #00553a;*/
-  /*color: #00553a;*/
-  /*background-color: #fffef1;*/
+  background-color: #fffef1;
 }
+
 .message-input :active {
   border: none;
 }
@@ -264,14 +262,8 @@ body {
 }
 
 button {
-  position: absolute;
-  margin-top: 7px;
-  z-index: 1;
-  margin-left: 720px;
-  height: 30px;
   background-color: #fffef1;
   color: #00553a;
-  width: 90px;
   border: none;
 }
 
@@ -282,11 +274,15 @@ button {
 }
 
 .my-message-template-flex {
+  margin-left: 25%;
   display: flex;
+  overflow: hidden;
   justify-content: flex-end;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 300px;
+  align-items: center;
+  align-content: center;
+  overflow-wrap: anywhere;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .contact-message-template-flex {
@@ -294,7 +290,7 @@ button {
   justify-content: flex-start;
   margin-bottom: 0;
   margin-top: 0;
-  margin-right: 300px;
+  margin-right: 25%;
 }
 
 .contact-message-date {
@@ -306,6 +302,7 @@ button {
 .my-message-date {
   text-align: end;
   margin-top: 4px;
+  margin-right: 12px;
   margin-bottom: 0;
 }
 
