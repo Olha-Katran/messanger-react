@@ -8,7 +8,7 @@ const HeaderComponent = () => {
                 alt="Avatar"
                 className="avatar header"
             />
-            <h2>Tom Hold </h2>
+            <h2 className="name-header">Tom Hold </h2>
         </div>
     )
 };

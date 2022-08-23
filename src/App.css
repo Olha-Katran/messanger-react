@@ -69,11 +69,18 @@ body {
 }
 
 .grey-block {
-  background-color: lightsteelblue;
+  background-color: #00553a;
   height: 200px;
 }
 .header-container {
   display: flex;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-list {
+  background-color: #fffef1;
+  border-right: 1px solid #00553a;
 }
 
 .avatar {
@@ -81,19 +88,51 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  min-width: 55px;
+  min-height: 50px;
+  border: 1px solid #fffef1;
 }
 
 .avatar header{
-  margin-top: 40px;
+  align-items: center;
+}
+
+.name-header {
+  margin-top: 30px;
+  align-items: center;
+  color: #fffef1;
+}
+
+.search-bar {
+  position: relative;
+  margin-top:0;
+  padding-top: 0;
+}
+
+.search-bar i {
+  position: absolute;
+}
+.icon {
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #00553a;
+  min-width: 50px;
+  text-align: center;
+  margin-top: 0.8em;
+  z-index: 1;
 }
 
 .search {
+  background-color: #fffef1;
+  border: 1px solid #00553a;
+  color: #00553a;
+  padding-left: 40px;
   margin-bottom: 10px;
   width: 90%;
   height: 30px;
-  text-align: center;
+  text-align: left;
   border-radius: 20px;
-  margin-top: 2em;
+  margin-top: 0.5em;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
@@ -103,22 +142,22 @@ body {
   display: flex;
   height: 100px;
   flex-direction: row;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #00553a;
 }
 
 .users-info {
   flex: 4;
+  position: relative;
   display: flex;
   flex-direction: column;
-  /*gap: -30px;*/
-  /*overflow: hidden;*/
-  text-overflow: ellipsis;
   margin-bottom: 10px;
+  margin-top: 12px;
 }
 
-.userInfo paragraph {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+.users-info-paragraph {
+  margin-top: 0;
+  text-overflow: ellipsis;
+  overflow: clip;
 }
 
 .avatar contact {
@@ -127,12 +166,16 @@ body {
 
 .users-date {
   display: flex;
+  align-items: flex-start;
   margin-right: 1em;
   margin-bottom: 0;
   padding-bottom: 0;
   line-height: 0;
-  margin-top: 5px;
+  margin-block-end: 0;
+}
 
+.users-date-paragraph {
+  margin-top: 18px;
 }
 
 .users-date h3 {
@@ -140,8 +183,8 @@ body {
 }
 
 .header-chat {
-  color: steelblue;
-  background-color: white;
+  color: #00553a;
+  background-color: #fffef1;
   margin-left: 0.5em;
 }
 
@@ -151,16 +194,17 @@ body {
 }
 
 .header-contact {
+  color: #fffef1;
   position: fixed;
   margin-top:0;
   padding-top: 0;
   display: flex;
   width: 100%;
-  border-bottom: 1px solid lightslategrey;
-  border-left: 1px solid lightslategrey;
+  border-bottom: 1px solid #fffef1;
+  border-left: 1px solid #fffef1;
   height: 100px;
-  background-color: lightsteelblue;
-
+  background-color: #00553a;
+  align-items: center;
 }
 
 .messaging-history-list {
@@ -171,29 +215,45 @@ body {
 }
 
 .main-message-input {
-  background-color: lightsteelblue;
-  min-height: 120px;
-  max-height: 120px;
+  background-color: #00553a;
+  min-height: 100px;
+  max-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid lightslategrey;
+}
+
+.input-button-block {
+  position: relative;
+  display: flex;
 }
 
 .message-input {
-  width: 700px;
+  width: 800px;
   height: 40px;
-  text-align: center;
+  text-align: left;
   border-radius: 20px;
+  padding-left: 20px;
+  border: 1px solid #00553a;
+  color: #00553a;
+  background-color: #fffef1;
+}
+
+.messaging-history-list {
+  background-color: #fffef1;
 }
 
 button {
-  height: 40px;
-  background-color: white;
-  color: lightsteelblue;
-  border-radius: 20px;
-  width: 100px;
+  position: absolute;
+  margin-top: 7px;
+  z-index: 1;
+  margin-left: 720px;
+  height: 30px;
+  background-color: #fffef1;
+  color: #00553a;
+  width: 90px;
+  border: none;
 }
 
 .message-template-row {
@@ -207,6 +267,7 @@ button {
   justify-content: flex-end;
   margin-bottom: 0;
   margin-top: 0;
+  margin-left: 300px;
 }
 
 .contact-message-template-flex {
@@ -214,6 +275,7 @@ button {
   justify-content: flex-start;
   margin-bottom: 0;
   margin-top: 0;
+  margin-right: 300px;
 }
 
 .contact-message-date {
@@ -229,20 +291,20 @@ button {
 }
 
 .contact-message-template-flex p {
-  background-color: midnightblue;
-  padding: 10px;
+  background-color: #00553a;
+  padding: 15px;
   color: white;
   border-radius: 25px;
-  min-width:30px;
   margin-bottom: 0;
 }
 
 .my-message-template-flex p {
   background-color: lightgrey;
   color: black;
-  padding: 10px;
+  text-align: right;
+  padding: 15px;
+  margin-right: 10px;
   border-radius: 25px;
-  min-width:30px;
   margin-bottom: 0;
 }
 
@@ -260,4 +322,8 @@ button {
   margin-left: 8px;
   min-height: 45px;
   border-radius: 50%;
+}
+
+.message-text {
+  max-width: 700px;
 }

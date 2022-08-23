@@ -13,7 +13,7 @@ const ContactRow = (props) => {
                     <h3>{props.name}</h3>
                     <p className="users-date-paragraph">{props.getLastMessage(props.id).date.toLocaleDateString("en", options)}</p>
                 </div>
-                <p className="userInfo paragraph">{props.getLastMessage(props.id).text}</p>
+                <p className="users-info-paragraph">{props.getLastMessage(props.id).text}</p>
             </div>
         </div>
     )

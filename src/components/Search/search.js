@@ -4,6 +4,7 @@ const SearchBar = (props) => {
 
         return (
             <form className="search-bar">
+                <i className="fa-solid fa-magnifying-glass icon"></i>
                 <input
                     type="text"
                     placeholder="Search contact"
