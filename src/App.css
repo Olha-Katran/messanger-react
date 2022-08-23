@@ -150,14 +150,18 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 12px;
 }
 
 .users-info-paragraph {
   margin-top: 0;
   text-overflow: ellipsis;
-  overflow: clip;
+  overflow: hidden;
+  height: 3em;
+  line-height: 1.5em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .avatar contact {
@@ -227,10 +231,7 @@ body {
 .input-button-block {
   position: relative;
   display: flex;
-}
-
-.message-input {
-  width: 800px;
+  width: 850px;
   height: 40px;
   text-align: left;
   border-radius: 20px;
@@ -238,6 +239,24 @@ body {
   border: 1px solid #00553a;
   color: #00553a;
   background-color: #fffef1;
+}
+
+.message-input {
+  width: 700px;
+  border: none;
+  outline: none;
+
+  /*width: 800px;*/
+  /*height: 40px;*/
+  /*text-align: left;*/
+  /*border-radius: 20px;*/
+  /*padding-left: 20px;*/
+  /*border: 1px solid #00553a;*/
+  /*color: #00553a;*/
+  /*background-color: #fffef1;*/
+}
+.message-input :active {
+  border: none;
 }
 
 .messaging-history-list {
