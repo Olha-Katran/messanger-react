@@ -42,25 +42,25 @@
           "senderId": 2,
           "messageId": 5,
           "date": "2022-03-23T00:00:00.000Z",
-          "text": "You asdfsdfsdfre the worst!"
+          "text": "You the worst!"
         },
         {
           "senderId": 0,
           "messageId": 6,
           "date": "2022-04-23T00:00:00.000Z",
-          "text": "Nosdfsdf!"
+          "text": "No!"
         },
         {
           "senderId": 2,
           "messageId": 7,
           "date": "2022-05-23T00:00:00.000Z",
-          "text": "Yesdfsdfsdfs!"
+          "text": "Yes!"
         },
         {
           "senderId": 0,
           "messageId": 8,
           "date": "2022-06-23T00:00:00.000Z",
-          "text": "Oksdfsdfsdfay!"
+          "text": "Ok!"
         }
       ]
     },

@@ -34,7 +34,6 @@ class MainMessageInput extends React.Component  {
                     />
 
                     <button
-
                         type="submit"
                         onClick={(e) => {
                             e.preventDefault()

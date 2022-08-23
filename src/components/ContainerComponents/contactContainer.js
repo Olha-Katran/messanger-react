@@ -18,16 +18,14 @@ const ContactContainer = (props) => {
           <div className="grey-block">
               <Header />
               <SearchBar searchInputHandler={searchInputHandler}/>
-
           </div>
 
           <ContactList
               contactList={props.contactList
-                  .filter(obj => obj.name.includes(searchValue))
+                  .filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase()))
                   .sort( (objA, objB) => Number(props.getLastMessage(objB.id).date) - Number(props.getLastMessage(objA.id).date))}
               onChange={props.onChange}
-              getLastMessage={props.getLastMessage}
-          />
+              getLastMessage={props.getLastMessage}/>
       </div>
   )
 };
