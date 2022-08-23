@@ -220,6 +220,8 @@ body {
 
 .messaging-history-list {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column-reverse;
   overflow-y: scroll;
   flex-grow: 2;
   scroll-behavior: revert;

@@ -6,7 +6,9 @@ function MessagingHistoryList (props) {
     return (
         <div className="messaging-history-list">
             {
-                props.messageHistory.find(x => x.contactId === props.selectedContactId).messages.map(message => {
+                props.messageHistory.find(x => x.contactId === props.selectedContactId).messages
+                    .sort((objA, objB) => Number(objB.date) - Number(objA.date))
+                    .map(message => {
                 return <MessageRow
                     key={message.messageId}
                     avatar={props.avatar}
