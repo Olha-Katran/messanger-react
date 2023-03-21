@@ -1,0 +1,257 @@
+{
+  "messageHistory": [
+    {
+      "contactId": 1,
+      "messages": [
+        {
+          "senderId": 1,
+          "messageId": 0,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 1,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        },
+        {
+          "senderId": 1,
+          "messageId": 2,
+          "date": "2022-05-23T00:00:00.000Z",
+          "text": "Yes!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 3,
+          "date": "2022-06-23T00:00:00.000Z",
+          "text": "Okay!"
+        },
+        {
+          "senderId": 1,
+          "messageId": 4,
+          "date": "2022-07-23T00:00:00.000Z",
+          "text": "Fine!"
+        }
+      ]
+    },
+    {
+      "contactId": 2,
+      "messages": [
+        {
+          "senderId": 2,
+          "messageId": 5,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 6,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        },
+        {
+          "senderId": 2,
+          "messageId": 7,
+          "date": "2022-05-23T00:00:00.000Z",
+          "text": "Yes!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 8,
+          "date": "2022-06-23T00:00:00.000Z",
+          "text": "Ok!"
+        }
+      ]
+    },
+    {
+      "contactId": 3,
+      "messages": [
+        {
+          "senderId": 3,
+          "messageId": 9,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 10,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        },
+        {
+          "senderId": 3,
+          "messageId": 11,
+          "date": "2022-05-23T00:00:00.000Z",
+          "text": "Yes!"
+        }
+      ]
+    },
+    {
+      "contactId": 4,
+      "messages": [
+        {
+          "senderId": 4,
+          "messageId": 12,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 13,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        },
+        {
+          "senderId": 4,
+          "messageId": 14,
+          "date": "2022-05-23T00:00:00.000Z",
+          "text": "Yes!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 15,
+          "date": "2022-06-23T00:00:00.000Z",
+          "text": "Okay!"
+        },
+        {
+          "senderId": 4,
+          "messageId": 16,
+          "date": "2022-07-23T00:00:00.000Z",
+          "text": "Fine!"
+        }
+      ]
+    },
+    {
+      "contactId": 5,
+      "messages": [
+        {
+          "senderId": 5,
+          "messageId": 17,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 18,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        },
+        {
+          "senderId": 5,
+          "messageId": 19,
+          "date": "2022-05-23T00:00:00.000Z",
+          "text": "Yes!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 20,
+          "date": "2022-06-23T00:00:00.000Z",
+          "text": "Okay!"
+        },
+        {
+          "senderId": 5,
+          "messageId": 21,
+          "date": "2022-07-23T00:00:00.000Z",
+          "text": "Fine!"
+        }
+      ]
+    },
+    {
+      "contactId": 6,
+      "messages": [
+        {
+          "senderId": 6,
+          "messageId": 22,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 23,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        }
+      ]
+    },
+    {
+      "contactId": 7,
+      "messages": [
+        {
+          "senderId": 7,
+          "messageId": 24,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        }
+      ]
+    },
+    {
+      "contactId": 8,
+      "messages": [
+        {
+          "senderId": 8,
+          "messageId": 25,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 26,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        }
+      ]
+    },
+    {
+      "contactId": 9,
+      "messages": [
+        {
+          "senderId": 9,
+          "messageId": 27,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 28,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        }
+      ]
+    },
+    {
+      "contactId": 10,
+      "messages": [
+        {
+          "senderId": 10,
+          "messageId": 29,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 30,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        }
+      ]
+    },
+    {
+      "contactId": 11,
+      "messages": [
+        {
+          "senderId": 11,
+          "messageId": 31,
+          "date": "2022-03-23T00:00:00.000Z",
+          "text": "You are the worst!"
+        },
+        {
+          "senderId": 0,
+          "messageId": 32,
+          "date": "2022-04-23T00:00:00.000Z",
+          "text": "No!"
+        }
+      ]
+    }
+  ]
+}
