@@ -1,5 +1,6 @@
 import React from 'react';
 import MessageRow from '../MessageRow/messageRow';
+import './messagingHistoryList.css';
 
 function MessagingHistoryList (props) {
 
