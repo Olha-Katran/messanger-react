@@ -1,0 +1,36 @@
+.search-bar {
+    margin-top:0;
+    padding-top: 0;
+}
+
+.search-bar-wrapper {
+    display: flex;
+    background-color: #fffef1;
+    text-align: left;
+    padding: 0 1em;
+    color: #00553a;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.icon {
+    color: #00553a;
+}
+
+.search-input {
+    background-color: #fffef1;
+    padding: 0 1em;
+    color: #00553a;
+    height: 2em;
+    text-align: left;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.search-input :active {
+    border: none;
+}

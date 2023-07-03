@@ -1,0 +1,72 @@
+.message-template-row {
+    margin: 0.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-message-template-flex {
+    margin-left: 25%;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    overflow-wrap: anywhere;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.contact-message-template-flex {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 25%;
+}
+
+.my-message-template-flex p {
+    background-color: lightgrey;
+    color: black;
+    text-align: right;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 25px;
+    margin-bottom: 0;
+}
+
+.contact-message-template-flex p {
+    background-color: #00553a;
+    padding: 15px;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 0;
+}
+
+.message-text {
+    max-width: 700px;
+}
+
+.message-avatar {
+    margin-right: 16px;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    margin-top: 16px;
+    margin-left: 8px;
+    min-height: 45px;
+    border-radius: 50%;
+}
+
+
+.contact-message-date {
+    margin-left: 80px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.my-message-date {
+    text-align: end;
+    margin-top: 4px;
+    margin-right: 12px;
+    margin-bottom: 0;
+}
