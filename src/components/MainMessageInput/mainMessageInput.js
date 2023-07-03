@@ -1,4 +1,5 @@
 import React from 'react';
+import './mainMessageInput.css';
 
 class MainMessageInput extends React.Component  {
 
