@@ -3,6 +3,7 @@ import Header from '../Header/header';
 import SearchBar from '../Search/search';
 import ContactList from '../ContactList/contactList';
 import {useState} from 'react';
+import './containers.css';
 
 const ContactContainer = (props) => {
 
@@ -13,7 +14,10 @@ const ContactContainer = (props) => {
     }
 
   return (
-      <div className="contact-container" >
+      <div
+          className="contact-container"
+          id="contact-container"
+      >
 
           <div className="grey-block">
               <Header />

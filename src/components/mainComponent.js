@@ -1,5 +1,4 @@
 import React from 'react';
-
 import messages from "../mocks/messages.json";
 import contacts from "../mocks/contacts.json";
 import cuid from 'cuid';
@@ -85,9 +84,8 @@ class Main extends React.Component {
 
         if (isFirstTime === "false") {
 
-            console.log("NOT FIRST TIME");
-
             this.setState({contactList: JSON.parse(localStorage.getItem(this.contactsKey))});
+
             this.setState({messageHistory: JSON.parse(localStorage.getItem(this.messagesKey), (key, value) => {
                     return key === "date" ? new Date(value) : value;
             })})
@@ -125,6 +123,6 @@ class Main extends React.Component {
             </div>
         )
     }
-};
+}
 
 export default Main;

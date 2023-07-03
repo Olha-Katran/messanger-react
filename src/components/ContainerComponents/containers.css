@@ -1,0 +1,55 @@
+.contact-container {
+    max-width: 30%;
+    min-width: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.grey-block {
+    background-color: red;
+    padding-bottom: 0.5em;
+}
+
+.history-container {
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 992px){
+    .contact-container {
+        min-width: 350px;
+    }
+
+    .history-container {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .contact-container {
+        min-width: 350px;
+        overflow: hidden;
+    }
+
+    .history-container {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contact-container {
+        position: absolute;
+        z-index: 1;
+        max-width: 100%;
+        min-width: 350px;
+    }
+
+    .history-container {
+       position: absolute;
+        z-index: 0;
+    }
+}

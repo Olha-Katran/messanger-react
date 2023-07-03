@@ -1,4 +1,5 @@
 import React from 'react';
+import './contactRow.css';
 
 const ContactRow = (props) => {
 
@@ -6,7 +7,7 @@ const ContactRow = (props) => {
 
     return (
         <div className="contact-row" onClick={ () => props.onChange(props.id)}>
-            <img src={props.avatar} alt="photo" className="avatar contact"/>
+            <img src={props.avatar} alt="photo" className="avatar-contact"/>
 
             <div className="users-info">
                 <div className="users-date">

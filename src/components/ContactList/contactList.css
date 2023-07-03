@@ -1,0 +1,12 @@
+.contact-list {
+    background-color: #fffef1;
+    border-right: 1px solid #00553a;
+    overflow-y: scroll;
+    flex-grow: 2;
+}
+
+.contact-list-header {
+    color: #00553a;
+    background-color: #fffef1;
+    margin-left: 0.5em;
+}

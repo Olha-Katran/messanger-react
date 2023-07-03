@@ -1,0 +1,26 @@
+.header-container {
+    display: flex;
+    height: 6.25em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.avatar-header {
+    margin: 1rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    border: 1px solid #fffef1;
+    align-items: center;
+}
+
+.name-header {
+    align-items: center;
+    color: #fffef1;
+}
